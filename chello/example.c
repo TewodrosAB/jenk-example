@@ -42,7 +42,7 @@ int null_pointer_interproc() {
   struct Person* joe = Person_create(32, 64, 140);
   return get_age(joe);
 }
-
+/*
 void fileNotClosed() {
   int fd = open("hi.txt", O_WRONLY | O_CREAT | O_TRUNC, 0600);
   if (fd != -1) {
@@ -51,7 +51,7 @@ void fileNotClosed() {
     write(fd, buffer, strlen(buffer));
   }
 }
-
+*/
 void simple_leak() {
   int* p;
   p = (int*)malloc(sizeof(int));
